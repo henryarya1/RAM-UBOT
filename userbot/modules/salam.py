@@ -119,6 +119,19 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**Gak keren lu begitu tolol, kuburan bapak lu gw gali buat dijadiin kolam renang anak paud.Cuihhhhh!!!**")
 
+
+@register(outgoing=True, pattern='^PUYYY(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("DAR DER DOR PALA BAPAK KAU GW GEDOR JANGAN HILANG DARI LINE SEORANG PUYY DATANG ANJAY")
+
+
+@register(outgoing=True, pattern='^yup(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("yaellah maap baee capss lu gak bikin gw geter g usah sok petarung bang ntar kalo di cecer ujung ujung kabur trs klrafikasi")
+
+
 CMD_HELP.update({
     "salam":
     "P\
